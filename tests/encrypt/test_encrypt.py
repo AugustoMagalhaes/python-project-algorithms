@@ -4,9 +4,6 @@ from challenges.challenge_encrypt_message import encrypt_message
 
 
 def test_encrypt_message():
-    """ with pytest.raises(TypeError, match="tipo inválido para key") as _:
-        encrypt_message(1, 1) """
-
     invalid_key = encrypt_message("ABCD", 20)
     assert invalid_key == "DCBA"
 
